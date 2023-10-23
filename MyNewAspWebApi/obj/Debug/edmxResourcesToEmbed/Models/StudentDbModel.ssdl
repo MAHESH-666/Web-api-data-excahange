@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="practicModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="stud">
+    <Key>
+      <PropertyRef Name="std_id" />
+    </Key>
+    <Property Name="std_id" Type="int" Nullable="false" />
+    <Property Name="std_name" Type="varchar" MaxLength="50" />
+    <Property Name="std_gender" Type="varchar" MaxLength="50" />
+    <Property Name="std_age" Type="int" />
+    <Property Name="std_claaas" Type="int" />
+    <Property Name="t_id" Type="int" />
+  </EntityType>
+  <EntityContainer Name="practicModelStoreContainer">
+    <EntitySet Name="stud" EntityType="Self.stud" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

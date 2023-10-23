@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MyNewAspWebApi.Models.stud>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.std_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.std_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.std_gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.std_age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.std_claaas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.t_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.std_id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.std_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.std_gender)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.std_age)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.std_claaas)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.t_id)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.std_id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.std_id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.std_id })
+    </td>
+</tr>
+}
+
+</table>

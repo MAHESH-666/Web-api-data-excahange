@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="practicModelStoreContainer" CdmEntityContainer="practicEntities2">
+    <EntitySetMapping Name="studs">
+      <EntityTypeMapping TypeName="practicModel.stud">
+        <MappingFragment StoreEntitySet="stud">
+          <ScalarProperty Name="std_id" ColumnName="std_id" />
+          <ScalarProperty Name="std_name" ColumnName="std_name" />
+          <ScalarProperty Name="std_gender" ColumnName="std_gender" />
+          <ScalarProperty Name="std_age" ColumnName="std_age" />
+          <ScalarProperty Name="std_claaas" ColumnName="std_claaas" />
+          <ScalarProperty Name="t_id" ColumnName="t_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

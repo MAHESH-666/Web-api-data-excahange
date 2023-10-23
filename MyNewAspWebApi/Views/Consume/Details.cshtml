@@ -1,0 +1,58 @@
+﻿@model MyNewAspWebApi.Models.stud
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>stud</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.std_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.std_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.std_gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.std_gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.std_age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.std_age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.std_claaas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.std_claaas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.t_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.t_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.std_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
